@@ -20,11 +20,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "fpga_led_pio[4]",
+					"name" : "PS2_DAT",
 					"strict" : false
 				},
 				{
-					"name" : "fpga_led_pio[5]",
+					"name" : "PS2_CLK",
 					"strict" : false
 				},
 				{
@@ -48,11 +48,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "fpga_button_pio[4]",
+					"name" : "fpga_button_pio[5]",
 					"strict" : false
 				},
 				{
-					"name" : "fpga_button_pio[5]",
+					"name" : "fpga_button_pio[4]",
 					"strict" : false
 				}
 			]

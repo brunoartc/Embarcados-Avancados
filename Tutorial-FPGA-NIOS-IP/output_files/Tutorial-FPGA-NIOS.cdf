@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSXFC6D6F31) Path("/home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS/output_files/") File("Tutorial-FPGA-NIOS.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSXFC6D6F31) Path("/home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/output_files/") File("Tutorial-FPGA-NIOS.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

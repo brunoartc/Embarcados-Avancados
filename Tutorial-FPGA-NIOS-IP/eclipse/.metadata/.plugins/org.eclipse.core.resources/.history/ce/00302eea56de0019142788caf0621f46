@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include "system.h"
+#include <alt_types.h>
+#include <io.h> /* Leiutura e escrita no Avalon */
+
+//#define SIM
+
+// LED Peripheral
+#define REG_DATA_OFFSET 1
+
+
+// PS2
+#define WRITE_PS2 0
+
+#define READ_PS2 1
+
+#define init_offset 1
+
+
+
+int PS2_init(unsigned int *base_address){
+	*(base_address+WRITE_PS2) = (0x1 << 0);
+	return *(base_address+WRITE_PS2);
+}
+
+int PS2_halt(unsigned int *base_address){
+	*(base_address+WRITE_PS2) = (0x0 << 0);
+	return *(base_address+WRITE_PS2);
+}
+
+int PS2_halt(unsigned int *base_address){
+	return *(base_address+READ_PS2);
+}
+
+
+
+
+
+int main(void){
+  unsigned int led = 0;
+  volatile unsigned int *p_led = (unsigned int *) PERIPHERAL_LED_0_BASE;
+  volatile unsigned int *p_p2 = (unsigned int *) PERIPHERAL_LED_0_BASE;
+
+  PS2_init(p_p2);
+
+  return 0;
+}

@@ -25,21 +25,21 @@
    type="SYSTEM_VERILOG"
    library="rsp_mux" />
  <file
-   path="simulation/submodules/niosHello_mm_interconnect_0_rsp_demux_001.sv"
+   path="simulation/submodules/niosHello_mm_interconnect_0_rsp_demux_003.sv"
    type="SYSTEM_VERILOG"
-   library="rsp_demux_001" />
+   library="rsp_demux_003" />
  <file
    path="simulation/submodules/niosHello_mm_interconnect_0_rsp_demux.sv"
    type="SYSTEM_VERILOG"
    library="rsp_demux" />
  <file
-   path="simulation/submodules/niosHello_mm_interconnect_0_cmd_mux_001.sv"
+   path="simulation/submodules/niosHello_mm_interconnect_0_cmd_mux_003.sv"
    type="SYSTEM_VERILOG"
-   library="cmd_mux_001" />
+   library="cmd_mux_003" />
  <file
    path="simulation/submodules/altera_merlin_arbitrator.sv"
    type="SYSTEM_VERILOG"
-   library="cmd_mux_001" />
+   library="cmd_mux_003" />
  <file
    path="simulation/submodules/niosHello_mm_interconnect_0_cmd_mux.sv"
    type="SYSTEM_VERILOG"
@@ -73,9 +73,9 @@
    type="SYSTEM_VERILOG"
    library="nios2_gen2_0_data_master_limiter" />
  <file
-   path="simulation/submodules/niosHello_mm_interconnect_0_router_003.sv"
+   path="simulation/submodules/niosHello_mm_interconnect_0_router_005.sv"
    type="SYSTEM_VERILOG"
-   library="router_003" />
+   library="router_005" />
  <file
    path="simulation/submodules/niosHello_mm_interconnect_0_router_002.sv"
    type="SYSTEM_VERILOG"
@@ -241,6 +241,10 @@
    type="VHDL"
    library="pio_1" />
  <file
+   path="simulation/submodules/peripheral_P2.vhd"
+   type="VHDL"
+   library="peripheral_ps2_0" />
+ <file
    path="simulation/submodules/peripheral_LED.vhd"
    type="VHDL"
    library="peripheral_LED_0" />
@@ -269,6 +273,8 @@
    type="VHDL"
    library="jtag_uart_0" />
  <file path="simulation/niosHello.vhd" type="VHDL" />
+ <file path="simulation/nioshello_rst_controller.vhd" type="VHDL" />
+ <file path="simulation/nioshello_rst_controller_001.vhd" type="VHDL" />
  <topLevel name="niosHello" />
  <deviceFamily name="cyclonev" />
  <modelMap

@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include "system.h"
+#include <alt_types.h>
+#include <io.h> /* Leiutura e escrita no Avalon */
+
+//#define SIM
+
+// LED Peripheral
+#define REG_DATA_OFFSET 1
+
+
+#define PERIPHERAL_PS2_0_BASE 0x61000
+
+
+// PS2
+#define WRITE_PS2 0
+
+#define READ_PS2 1
+
+#define init_offset 1
+
+
+
+int PS2_init(unsigned int *base_address){
+
+	*(base_address+WRITE_PS2) = (0x1 << 0);
+	*(base_address+WRITE_PS2) = 0;
+
+	printf("%x", *(base_address+2) );
+	return *(base_address+WRITE_PS2);
+}
+
+int PS2_halt(unsigned int *base_address){
+	*(base_address+WRITE_PS2) = (0x0 << 0);
+	return *(base_address+WRITE_PS2);
+}
+
+int PS2_read_clickLeft(unsigned int *base_address){
+	return (*(base_address+READ_PS2) & (0x1 << 0));
+}
+
+int PS2_read_clickRight(unsigned int *base_address){
+	return (*(base_address+READ_PS2) & (0x1 << 1));
+}
+
+int PS2_read_clickMid(unsigned int *base_address){
+	return (*(base_address+READ_PS2) & (0x1 << 2));
+}
+
+int PS2_read_xO(unsigned int *base_address){
+	return (*(base_address+READ_PS2) & (0xff << 3));
+}
+
+int PS2_read_Y0(unsigned int *base_address){
+	return (*(base_address+READ_PS2) & (0xff << 11));
+}
+
+
+
+
+int main(void){
+
+  int flag_true = 0;
+  unsigned int led = 0;
+  volatile unsigned int *p_led = (unsigned int *) PERIPHERAL_LED_0_BASE;
+  volatile unsigned int *p_p2 = (unsigned int *) PERIPHERAL_PS2_0_BASE;
+  if (!flag_true){
+  		  flag_true = PS2_init(p_p2);
+  		  printf("%d", flag_true);
+  	  }
+  while (1){
+
+	  if (PS2_read_clickLeft(p_p2)) printf("click");
+	  printf("%d\n", PS2_read_clickLeft(p_p2));
+
+
+
+  }
+
+  return 0;
+}

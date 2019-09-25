@@ -1,5 +1,5 @@
 Flow report for Tutorial-FPGA-NIOS
-Wed Sep  4 20:21:12 2019
+Wed Sep 25 20:03:13 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Wed Sep  4 20:21:12 2019           ;
+; Flow Status                     ; Successful - Wed Sep 25 20:03:13 2019           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; Tutorial-FPGA-NIOS                              ;
 ; Top-level Entity Name           ; topLevel                                        ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSXFC6D6F31C6                                  ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 1,340 / 41,910 ( 3 % )                          ;
-; Total registers                 ; 1959                                            ;
+; Logic utilization (in ALMs)     ; 1,413 / 41,910 ( 3 % )                          ;
+; Total registers                 ; 2108                                            ;
 ; Total pins                      ; 13 / 499 ( 3 % )                                ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 1,823,744 / 5,662,720 ( 32 % )                  ;
@@ -67,38 +67,39 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/04/2019 20:17:31 ;
+; Start date & time ; 09/25/2019 20:00:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Tutorial-FPGA-NIOS  ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                      ;
-+-------------------------------------+-------------------------------------------------------------+--------------------+-------------+----------------+
-; Assignment Name                     ; Value                                                       ; Default Value      ; Entity Name ; Section Id     ;
-+-------------------------------------+-------------------------------------------------------------+--------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 167690720302005.156763905100560                             ; --                 ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                 ; --                 ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                   ; <None>             ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                                        ; --                 ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                                          ; --                 ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                                           ; --                 ; --          ; --             ;
-; MISC_FILE                           ; niosHello/synthesis/../niosHello.cmp                        ; --                 ; --          ; --             ;
-; MISC_FILE                           ; niosHello/synthesis/../../niosHello.qsys                    ; --                 ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family)                      ; --                 ; topLevel    ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                      ; --                 ; topLevel    ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                      ; --                 ; topLevel    ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                         ; --                 ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                       ; --                 ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                ; --                 ; --          ; --             ;
-; SLD_FILE                            ; niosHello/synthesis/niosHello.regmap                        ; --                 ; --          ; --             ;
-; SLD_FILE                            ; niosHello/synthesis/niosHello.debuginfo                     ; --                 ; --          ; --             ;
-; SLD_INFO                            ; QSYS_NAME niosHello HAS_SOPCINFO 1 GENERATION_ID 1567639022 ; --                 ; niosHello   ; --             ;
-; SOPCINFO_FILE                       ; niosHello/synthesis/../../niosHello.sopcinfo                ; --                 ; --          ; --             ;
-; SYNTHESIS_ONLY_QIP                  ; On                                                          ; --                 ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; topLevel                                                    ; Tutorial-FPGA-NIOS ; --          ; --             ;
-+-------------------------------------+-------------------------------------------------------------+--------------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                     ;
++-------------------------------------+----------------------------------------------------------------------------+--------------------+-------------+----------------+
+; Assignment Name                     ; Value                                                                      ; Default Value      ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------------------------------------------+--------------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 167690714599034.156945243922472                                            ; --                 ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                                ; --                 ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                                  ; <None>             ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                                                       ; --                 ; --          ; eda_simulation ;
+; IP_SEARCH_PATHS                     ; /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/IP ; --                 ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                         ; --                 ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                          ; --                 ; --          ; --             ;
+; MISC_FILE                           ; niosHello/synthesis/../niosHello.cmp                                       ; --                 ; --          ; --             ;
+; MISC_FILE                           ; niosHello/synthesis/../../niosHello.qsys                                   ; --                 ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                                     ; --                 ; topLevel    ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                                     ; --                 ; topLevel    ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                                     ; --                 ; topLevel    ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                        ; --                 ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                      ; --                 ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                               ; --                 ; --          ; --             ;
+; SLD_FILE                            ; niosHello/synthesis/niosHello.regmap                                       ; --                 ; --          ; --             ;
+; SLD_FILE                            ; niosHello/synthesis/niosHello.debuginfo                                    ; --                 ; --          ; --             ;
+; SLD_INFO                            ; QSYS_NAME niosHello HAS_SOPCINFO 1 GENERATION_ID 1569452382                ; --                 ; niosHello   ; --             ;
+; SOPCINFO_FILE                       ; niosHello/synthesis/../../niosHello.sopcinfo                               ; --                 ; --          ; --             ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                         ; --                 ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; topLevel                                                                   ; Tutorial-FPGA-NIOS ; --          ; --             ;
++-------------------------------------+----------------------------------------------------------------------------+--------------------+-------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -106,12 +107,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:23     ; 1.0                     ; 1215 MB             ; 00:02:58                           ;
-; Fitter               ; 00:01:43     ; 1.2                     ; 2576 MB             ; 00:03:11                           ;
-; Assembler            ; 00:00:11     ; 1.0                     ; 1011 MB             ; 00:00:10                           ;
-; Timing Analyzer      ; 00:00:13     ; 2.0                     ; 1283 MB             ; 00:00:24                           ;
+; Analysis & Synthesis ; 00:00:38     ; 1.0                     ; 1225 MB             ; 00:01:08                           ;
+; Fitter               ; 00:01:19     ; 1.2                     ; 2549 MB             ; 00:02:50                           ;
+; Assembler            ; 00:00:10     ; 1.0                     ; 1002 MB             ; 00:00:10                           ;
+; Timing Analyzer      ; 00:00:12     ; 1.9                     ; 1286 MB             ; 00:00:23                           ;
 ; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 1204 MB             ; 00:00:04                           ;
-; Total                ; 00:03:34     ; --                      ; --                  ; 00:06:47                           ;
+; Total                ; 00:02:23     ; --                      ; --                  ; 00:04:35                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

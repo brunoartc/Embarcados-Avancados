@@ -1,12 +1,12 @@
-Fitter Status : Successful - Wed Sep  4 20:20:40 2019
+Fitter Status : Successful - Wed Sep 25 20:02:42 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : Tutorial-FPGA-NIOS
 Top-level Entity Name : topLevel
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 1,340 / 41,910 ( 3 % )
-Total registers : 1959
+Logic utilization (in ALMs) : 1,413 / 41,910 ( 3 % )
+Total registers : 2108
 Total pins : 13 / 499 ( 3 % )
 Total virtual pins : 0
 Total block memory bits : 1,823,744 / 5,662,720 ( 32 % )

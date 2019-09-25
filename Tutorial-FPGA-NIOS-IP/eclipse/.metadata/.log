@@ -1,0 +1,995 @@
+!SESSION 2019-09-11 19:30:47.048 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization /home/bruno/intelFPGA/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization /home/bruno/intelFPGA/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-09-11 19:31:22.765
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-09-11 19:51:27.056
+!MESSAGE Indexed 'niosHello_bsp' (79 sources, 97 headers) in 1.5 sec: 2,118 declarations; 4,266 references; 85 unresolved inclusions; 6 syntax errors; 162 unresolved names (2.5%)
+!SESSION 2019-09-11 19:55:14.819 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization /home/bruno/intelFPGA/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization /home/bruno/intelFPGA/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-09-11 19:55:31.144
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-09-11 19:57:14.099
+!MESSAGE Indexed 'niosHello' (1 sources, 0 headers) in 0.171 sec: 1 declarations; 1 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:01:08.967
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:01:10.340
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:01:53.308
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:01:53.413
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:01:54.779
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:03:02.290
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:03:02.363
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:03:03.745
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:03:16.717
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:03:16.786
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:03:18.275
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:04:45.306
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:04:48.943
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:04:50.334
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:05:24.668
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:05:24.746
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:05:26.126
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:05:39.150
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:05:39.230
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:05:40.634
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:07:41.465
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:07:41.545
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:07:42.944
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:08:04.130
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:08:04.249
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:08:05.661
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:08:17.698
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:08:17.804
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:08:19.191
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:08:48.461
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:08:48.543
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:08:49.695
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:08:49.914
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:08:51.074
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:08:58.034
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:08:58.036
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:08:58.132
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:08:59.728
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:09:31.517
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:09:31.631
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:09:32.256
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:09:33.013
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-11 20:09:33.628
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+!SESSION 2019-09-16 18:33:27.114 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization /home/bruno/intelFPGA/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization /home/bruno/intelFPGA/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-09-16 18:33:50.290
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+!SESSION 2019-09-23 19:49:15.300 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization /home/bruno/intelFPGA/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization /home/bruno/intelFPGA/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-09-23 19:49:47.977
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-23 19:53:44.898
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-23 19:53:44.928
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-23 19:54:00.817
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-23 19:54:00.818
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-23 19:54:58.756
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-23 19:54:58.756
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-23 19:56:14.502
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-23 19:56:14.503
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-23 19:57:32.212
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-23 19:57:33.565
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-23 19:57:33.599
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-23 20:08:43.876
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-23 20:08:44.109
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-23 20:08:45.409
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-23 20:08:45.441
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-23 20:09:05.829
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-23 20:09:06.443
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-23 20:09:07.741
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-23 20:09:07.783
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-23 20:09:51.821
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-23 20:09:51.899
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-23 20:09:53.177
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-23 20:09:53.217
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-23 20:10:44.841
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-23 20:11:04.959
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-23 20:11:06.255
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-23 20:11:06.356
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+!SESSION 2019-09-25 18:56:14.935 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization /home/bruno/intelFPGA/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization /home/bruno/intelFPGA/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-09-25 18:56:22.464
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2019-09-25 18:56:41.107
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.launch 4 104 2019-09-25 18:59:39.408
+!MESSAGE The Nios II ELF executable does not exist. Please verify that the project niosHello built successfully.
+!STACK 0
+java.io.FileNotFoundException: ELF file 'niosHello.elf' not found.
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProgramFile(Nios2HardwareLaunchDelegate.java:1232)
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.verifyProgramFile(AbstractCLaunchDelegate.java:448)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.initialize(AbstractNios2CLaunchDelegate.java:183)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:90)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 104 2019-09-25 18:59:39.408
+!MESSAGE ELF file 'niosHello.elf' not found.
+!STACK 0
+java.io.FileNotFoundException: ELF file 'niosHello.elf' not found.
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.getProgramFile(Nios2HardwareLaunchDelegate.java:1232)
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.verifyProgramFile(AbstractCLaunchDelegate.java:448)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.initialize(AbstractNios2CLaunchDelegate.java:183)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:90)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:00:23.554
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:00:25.069
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:00:25.117
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:02:50.483
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:02:50.535
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:02:51.811
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:02:51.844
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:03:13.611
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:03:13.666
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:03:14.949
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:03:19.583
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:03:56.281
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:03:57.569
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:03:57.601
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:12:48.087
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:12:48.154
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:12:49.426
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:12:49.457
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:26:14.150
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:26:14.200
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:26:15.441
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:26:15.470
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:26:34.598
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:26:34.680
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:26:35.915
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:26:35.950
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:27:01.773
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:27:01.842
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:27:03.114
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:27:03.143
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:27:04.483
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:27:04.549
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:27:05.788
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:27:05.823
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:27:38.268
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:27:38.340
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:27:39.639
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:27:39.678
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:27:39.883
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:27:41.123
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:27:41.158
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:32:08.720
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:32:09.981
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:32:10.014
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:32:34.384
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:32:34.492
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:32:35.963
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:32:35.994
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:33:05.567
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:33:05.690
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:33:06.949
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:33:11.345
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:34:03.348
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:34:04.629
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:34:04.663
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:34:28.494
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:34:28.690
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:34:29.945
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:34:29.985
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:35:34.265
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:35:34.349
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:35:35.629
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:35:35.665
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:37:40.119
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:37:40.199
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:37:41.484
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:37:41.518
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:38:49.363
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:38:49.417
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:38:50.678
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:38:50.714
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:39:43.984
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:39:44.444
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:39:45.700
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:39:45.735
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:40:25.427
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:40:25.493
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:40:26.755
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:40:26.788
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:41:00.748
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:41:00.858
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:41:02.118
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:41:02.182
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:41:31.985
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:41:32.064
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:41:33.325
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:41:33.364
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:42:14.350
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:42:14.498
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:42:15.765
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:42:15.806
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:42:32.355
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:42:32.457
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:42:33.717
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:42:33.758
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:50:22.076
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:50:23.351
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:50:23.383
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:50:54.317
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:50:54.383
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:50:55.637
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:50:55.676
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:51:16.133
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:51:16.262
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:51:17.523
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:51:17.566
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:51:54.841
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:51:54.914
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:51:56.182
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:51:56.218
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:52:41.613
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:52:41.672
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:52:42.935
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:52:42.970
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:53:10.924
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:53:11.089
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:53:12.373
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:53:12.440
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:53:30.916
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:53:31.000
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:53:32.286
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:53:32.330
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:54:01.102
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:54:01.180
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:54:02.466
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:54:02.509
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:54:53.055
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:54:53.227
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:54:54.492
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:54:54.539
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:55:31.155
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:55:31.218
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:55:32.216
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:55:32.527
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:55:32.561
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:55:33.475
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:55:33.750
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:57:00.129
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:57:00.133
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:57:00.281
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:57:01.560
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:57:01.602
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:57:08.014
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:57:08.078
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:57:09.350
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:57:09.386
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:57:36.647
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:57:36.716
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:57:37.997
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:57:38.032
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:57:48.325
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:57:48.451
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 19:57:49.711
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 19:57:49.749
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:04:05.183
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 20:04:06.463
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:04:06.499
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:04:07.080
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 20:04:08.334
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:04:08.371
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:05:01.644
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:05:01.827
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 20:05:03.099
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:05:07.499
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:05:28.138
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 20:05:29.411
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:05:29.445
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:06:10.024
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:06:10.076
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 20:06:11.344
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:06:11.377
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:06:53.496
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:06:53.688
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 20:06:54.964
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:06:55.005
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:07:59.847
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [1-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:07:59.932
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-09-25 20:08:01.190
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [1-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-25 20:08:01.229
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=DE-SoC on localhost [1-1]' --device=2 --instance=0 --go --accept-bad-sysid --reset-target /home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello/niosHello.elf]

@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=/home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello
+newSoftwareExampleWizardPage.sopcinfoFile=/home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/niosHello.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=/home/bruno/Documents/Insper/Embarcados-Avancados/Tutorial-FPGA-NIOS-IP/software/niosHello/niosHello_bsp
