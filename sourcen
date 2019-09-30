@@ -1,0 +1,22 @@
+export ALTERAPATH=~/intelFPGA/18.1/
+
+export QUARTUS_ROOTDIR=$ALTERAPATH/quartus/
+export PATH=$PATH:${ALTERAPATH}/quartus/bin
+export PATH=$PATH:${ALTERAPATH}/modelsim_ase/linuxaloem/
+export PATH=$PATH:${ALTERAPATH}/quartus/sopc_builder/bin/
+
+export PATH=$PATH:${ALTERAPATH}/embedded/
+export PATH=$PATH:${ALTERAPATH}/embedded/host_tools/altera/preloadergen/
+
+export PATH=$PATH:${ALTERAPATH}/hls/bin/
+export LD_LIBRARY_PATH=${ALTERAPATH}/hls/host/linux64/lib/
+
+export PATH=$PATH:${ALTERAPATH}/nios2eds/
+export PATH=$PATH:${ALTERAPATH}/nios2eds/sdk2/bin/
+
+export SOCEDS_DEST_ROOT=${ALTERAPATH}/embedded
+export SOCEDS_HWLIB=${ALTERAPATH}/embedded/ip/altera/hps/altera_hps/hwlib/
+
+
+export GCC_Linaro=/home/bruno/intelFPGA/gcc-linaro-7.4.1-2019.02-i686_arm-linux-gnueabihf/bin
+export PATH=$PATH:${GCC_Linaro}
