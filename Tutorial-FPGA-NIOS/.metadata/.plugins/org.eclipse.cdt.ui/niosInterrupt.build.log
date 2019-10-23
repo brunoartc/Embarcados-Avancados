@@ -1,0 +1,6 @@
+20:22:05 **** Clean-only build of configuration Nios II for project niosInterrupt ****
+make clean 
+[niosInterrupt clean complete]
+
+20:22:05 Build Finished (took 331ms)
+
